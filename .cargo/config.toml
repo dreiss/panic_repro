@@ -3,7 +3,11 @@
 rustflags = [
   "-C", "link-arg=-Tmemory.x",
   "-C", "link-arg=-Tlink.x",
+  # "-C", "force-frame-pointers=yes",
 ]
 
 [build]
 target = "riscv64gc-unknown-none-elf"
+
+# [unstable]
+# build-std = ["core"]

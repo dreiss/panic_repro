@@ -39,6 +39,7 @@ macro_rules! print
 	});
 }
 
+#[allow(unused)]
 fn getc() -> Option<u8> {
     UART.lock().as_mut().unwrap().get()
 }
